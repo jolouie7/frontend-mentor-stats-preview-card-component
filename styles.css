@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container {
+  margin: 0 2rem;
+}
+
+.card-header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.card-header span {
+  color: purple;
+}
+
+.card-container > p {
+  text-align: center;
+  font-size: 15px;
+  margin: 1rem 0 2rem 0;
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-stat {
+  margin-bottom: 2rem;
+}
+
+.card-stat > p {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 375px) {
+  
+}
+
+@media only screen and (min-width: 990px) {
+  
+}
