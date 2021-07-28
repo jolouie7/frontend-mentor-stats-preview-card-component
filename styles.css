@@ -1,16 +1,30 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  background: hsl(244, 38%, 16%);
+}
+
+body img:nth-child(1) {
+  width: 100%;
+}
+
 .card-container {
-  margin: 0 2rem;
+  padding: 0 6rem;
+  min-width: 50%;
 }
 
 .card-header {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 5rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'inter', sans-serif;
 }
 
 .card-header span {
@@ -20,7 +34,9 @@
 .card-container > p {
   text-align: center;
   font-size: 15px;
-  margin: 1rem 0 2rem 0;
+  margin: 3rem 0 5rem 0;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'inter', sans-serif;
 }
 
 .stat-container {
@@ -34,14 +50,59 @@
   margin-bottom: 2rem;
 }
 
-.card-stat > p {
+.card-stat > div {
+  font-size: 2rem;
+  font-family: 'inter', sans-serif;
   text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
 }
 
-@media only screen and (min-width: 375px) {
-  
+.card-stat > p {
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+body > img:nth-child(2) {
+  display: none;
 }
 
 @media only screen and (min-width: 990px) {
-  
+  body {
+    display: flex;
+  }
+
+  body img {
+    order: 2;
+  }
+
+  body > img:nth-child(1) {
+    display: none;
+  }
+
+  body > img:nth-child(2) {
+    display: block;
+  }
+
+  .card-container {
+    padding: 0 6rem;
+    width: 600px;
+  }
+
+  .card-container h1 {
+    text-align: left;
+  }
+
+  .card-container p {
+    text-align: left;
+  }
+
+  .stat-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card-stat {
+    text-align: left;
+  }
 }
